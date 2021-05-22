@@ -32,6 +32,6 @@ submissions.on('item', (post) => {
         const link = re.exec(post.title)[0]
 
         console.log('Found a post to reply to: ' + link + '\n' + post.id + '\n\n')
-        client.getSubmission(postId).reply('Bippity boppity, I found a link in your header: ' + link + '\n\n---\n^(Hey, this was done by a bot. | [support](https://github.com/alechash/linkable-headers/issues) | [github source code](https://github.com/alechash/linkable-headers) | [MIT License](https://github.com/alechash/linkable-headers/blob/main/LICENSE))')
+        client.getSubmission(postId).reply('Bippity boppity, I found a link in your header: ' + link + '\n\n---\n^(Hey, this was done by a bot. | [support](https://github.com/alechash/linkable-headers/issues) | [github source code](https://github.com/alechash/linkable-headers) | [MIT License](https://github.com/alechash/linkable-headers/blob/main/LICENSE))\n\n^(If you dont want me commenting in your subreddit, ban me.)')
     }
 });
